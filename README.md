@@ -10,19 +10,35 @@ Prof. Thiago G. Traue (thiago.traue@mackenzie.br)
 
 ## Ambiente de desenvolvimento
 
-1º: JRE + JVM: https://www.java.com/pt-BR/
+1º: JRE + JVM: [NESTE LINK](https://www.java.com/pt-BR/)
 
-2º: JDK: https://www.oracle.com/br/java/technologies/downloads/
+2º: JDK: [NESTE LINK](https://www.oracle.com/br/java/technologies/downloads/)
 
 3º: Teste de terminal
   - java -version
   - javac -version
-  (se não reconhecer, acertar variáveis de ambiente)
+  (se não reconhecer, [acertar variáveis de ambiente](https://stackoverflow.com/questions/tagged/java-home?tab=Frequent))
 
 
 4º: Instalaço da IDE 
-  Eclipe: https://eclipseide.org/ < usaremos eclipse em lab
-  NetBeans: https://netbeans.apache.org/
+  [Eclipe](https://eclipseide.org) ➡ usaremos este
+  [Apache NetBeans](https://netbeans.apache.org)
+  [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/)
+
+
+Alternativas online:
+ - [Replit](https://replit.com/)
+ - [Online GDB](https://www.onlinegdb.com/)
+ - [IDX](https://idx.dev/) - Experimental
+
+
+## Links relevantes
+
+Alguns links importantes para nossa disciplina:
+
+ - [Curso de Git e GitHub - School of Net](https://www.schoolofnet.com/curso/git/controle-de-versao/git-e-github/)
+
+(em breve mais links)
 
 
 ## Bibliografia da disciplina
