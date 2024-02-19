@@ -21,9 +21,9 @@ Prof. Thiago G. Traue (thiago.traue@mackenzie.br)
 
 
 4º: Instalaço da IDE 
-  [Eclipe](https://eclipseide.org) ➡ usaremos este
-  [Apache NetBeans](https://netbeans.apache.org)
-  [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/)
+  - [Eclipe](https://eclipseide.org) ➡ usaremos este
+  - [Apache NetBeans](https://netbeans.apache.org)
+  - [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/)
 
 
 Alternativas online:
