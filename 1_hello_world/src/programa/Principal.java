@@ -17,8 +17,6 @@ class Principal {
 		
 		System.out.println("\nSua sala é a " + sala + ". Não se atrase!");
 		
-		//semana que vem:
-		//https://www.w3schools.com/java/java_data_types.asp
 	}
 	
 }
