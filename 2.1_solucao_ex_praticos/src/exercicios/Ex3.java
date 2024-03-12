@@ -38,6 +38,8 @@ public class Ex3 {
 		media = ((p1 * peso1) + (p2 * peso2) + (p3 * peso3)) / (peso1 + peso2 + peso3);
 
 		System.out.println("A média deste alunos é: " + media);
+		
+		sc.close();
 
 	}
 

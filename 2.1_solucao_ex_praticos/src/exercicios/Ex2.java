@@ -35,6 +35,8 @@ public class Ex2 {
 
 		System.out.println("Valor A: " + a);
 		System.out.println("Valor B: " + b);
+		
+		sc.close();
 
 	}
 }
