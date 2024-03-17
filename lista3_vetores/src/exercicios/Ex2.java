@@ -16,6 +16,7 @@ public class Ex2 {
 		int vBuscado = sc.nextInt();
 		
 		
+		sc.close();
 
 	}
 }

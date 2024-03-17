@@ -18,5 +18,7 @@ public class Ex1_v2 {
 		}
 
 		System.out.println("Soma dos valores: " + soma);
+		
+		sc.close();
 	}
 }
