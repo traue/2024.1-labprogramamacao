@@ -14,6 +14,9 @@ public class Principal {
 		Aluno aluno = new Aluno();
 		Curso curso = new Curso();
 		
+		Aluno x = new Aluno("Enzo", 13);
+		
+		
 		System.out.println("--- DADO DO ALUNO ---");
 		
 		System.out.print(" > RA: ");
@@ -52,6 +55,12 @@ public class Principal {
 		
 		//todo: "mini atividade": Fazer o endereço
 		//todo2: Implementar o professor, a disciplina etc.
+		
+		sc.close();
+		
+		System.out.print("Total de horas do curso:" + curso.ch);
+		System.out.print("\nValor total do curso:" + curso.valorTotal);
+		System.out.print("\nValor por hora:" + curso.valorPorHora());
 	}
 	
 }
