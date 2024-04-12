@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import model.Aluno;
 import model.Curso;
+import model.Endereco;
 
 
 public class Principal {
@@ -14,27 +15,40 @@ public class Principal {
 		Aluno aluno = new Aluno();
 		Curso curso = new Curso();
 		
-		Aluno x = new Aluno("Enzo", 13);
+		Aluno x = new Aluno();
+		x.setNome("João");
+		x.setIdade(19);
+		//...
+		
+		Endereco r = new Endereco();
+		Curso c2 = new Curso();
+		
+		Aluno y = new Aluno("Fulnao", 1234, 'W', 18, r, 321, c2);
+		y.setNome("Ana");
+		
+		//x.nome = "Enzo";
+		x.setNome("Enzo");
+		System.out.println(x.getNome());
 		
 		
 		System.out.println("--- DADO DO ALUNO ---");
 		
 		System.out.print(" > RA: ");
-		aluno.ra = sc.nextInt();
+		aluno.setRa(sc.nextInt());
 		sc.nextLine();
 		
 		System.out.print(" > Nome: ");
-		aluno.nome = sc.nextLine();
+		aluno.setNome(sc.nextLine());
 		
 		System.out.print(" > Idade: ");
-		aluno.idade = sc.nextInt();
+		aluno.setIdade(sc.nextInt());
 		
 		System.out.print(" > CPF: ");
-		aluno.cpf = sc.nextLong(); 
+		aluno.setCpf(sc.nextLong()); 
 		sc.nextLine();
 		
 		System.out.print(" > Sexo: ");
-		aluno.sexo = sc.nextLine().charAt(0);
+		aluno.setSexo(sc.nextLine().charAt(0));
 		
 		System.out.println("--- DADO DO CURSO ---");
 		
@@ -51,7 +65,7 @@ public class Principal {
 		System.out.print(" > Valor total: R$ ");
 		curso.valorTotal = sc.nextFloat();
 		
-		aluno.curso = curso;
+		aluno.setCurso(curso);
 		
 		//todo: "mini atividade": Fazer o endereço
 		//todo2: Implementar o professor, a disciplina etc.

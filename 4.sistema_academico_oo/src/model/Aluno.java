@@ -2,18 +2,44 @@ package model;
 
 public class Aluno extends Pessoa {
 	
-	public int ra;
-	public Curso curso;
+	private int ra;
+	private Curso curso;
 	
 	//método construtor de aluno com parâmetros
 	public Aluno(String nome, int idade) {
-		this.nome = nome;
-		this.idade = idade;
+		super(nome, 0, ' ', idade, null);
 	}
 	
+
+	public Aluno(String nome, long cpf, char sexo, int idade, Endereco endereco, int ra, Curso curso) {
+		super(nome, cpf, sexo, idade, endereco);
+		this.ra = ra;
+		this.curso = curso;
+	}
+
+
 	//método construtor padrão	
 	public Aluno() {
-		
 	}
+
+
+	public int getRa() {
+		return ra;
+	}
+
+
+	public void setRa(int ra) {
+		this.ra = ra;
+	}
+
+
+	public Curso getCurso() {
+		return curso;
+	}
+
+
+	public void setCurso(Curso curso) {
+		this.curso = curso;
+	}	
 	
 }
