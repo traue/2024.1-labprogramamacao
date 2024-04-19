@@ -1,0 +1,17 @@
+1. Crie um programa em Java que leia um texto
+   (informado pelo usuário) e guarde em um vetor
+   (cada posição deve armazenar um caractere). 
+   Em seguida crie uma forma de mostrar o texto ao
+   contrário.
+   Dica: todo texto é um vetor de caracteres. Para acessar
+   uma posição em uma String, use o método charAt(x), onde
+   x é a posição acessada. Cuidado com o tamanho do texto!
+
+   09:42 -> 09:46
+
+2. Usando o código do exercício anterior, verificar se
+   um determinado texto de entrada é um palindrome
+   Exemplo: ovo; ana; arara; abba; miaaim ...
+
+3. Lições de casa: 
+    beecrowd.com, exercícios: 1069, 2167 e 1176 (em Java!)
