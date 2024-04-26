@@ -1,0 +1,50 @@
+ENUNCIADO
+
+Dados dois pontos no plano cartesiano, calcular a distância euclidiana 
+entre eles
+
+
+Ex: 
+ > Entradas:
+    A (2, 4)
+    B (5, 3)
+
+> Processo:
+  1) Encontrar o ponto "C" (Xa, Yb) => C (2, 3)
+  2) Encontrar a "base": Xb - Xc => 5 - 2 = 3
+  3) Encontrar a "altura": Ya - Yc => 4 - 3 = 1
+  3) Calcular a distância euclidiana: 
+    x^2 = "base"^2 + "altura"^2
+    x = RAIZ("base"^2 + "altura"^2)
+    X = RAIZ(3^2 + 1^2)
+    X = RAIZ(9 + 1)
+    X = RAIZ(10)
+    X = ~3,16
+   
+
+ > Saída:
+    Distância: ~3.16
+
+
+************************DESAFIO************************
+
+Imagine agora que você possua DOIS pontos (A e B) que delimitam um 
+retângulo no plano. O ponto A representa o vértice superior esquerdo. O ponto B
+representa o vértice inferior direito.
+
+Ler um terceiro ponto (C) e verificar se ele está dentro ou fora desse retângulo
+Considere que se o ponto estiver "na linha" do retângulo, ele está dentro.
+
+
+
+************************DESAFIO II************************
+
+Dados dois pontos (A e B) no plano cartesiano e que delimitam o raio de um círculo,
+ler um terceiro ponto e determinar se ele está dentro ou fora do círculo.
+
+
+************************DESAFIO III************************
+
+Modifique o desafio III e informe a distância do ponto fornecido ao 
+centro do círculo (A)
+
