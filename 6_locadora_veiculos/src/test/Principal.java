@@ -89,7 +89,5 @@ public class Principal {
 		System.out.println("[5] - Listar Veículos");
 		System.out.println("[6] - Listar clientes");
 		System.out.println("[0] - Sair");
-		System.out.println("************");
 	}
-
 }
