@@ -3,6 +3,7 @@ package test;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import model.PessoaFisica;
 import model.TipoCambio;
 import model.Veiculo;
 
@@ -11,6 +12,7 @@ public class Principal {
 	public static void main(String[] args) {
 
 		ArrayList<Veiculo> veiculos = new ArrayList<>();
+		ArrayList<PessoaFisica> pessoasFisicas = new ArrayList<>();
 
 		try (Scanner sc = new Scanner(System.in)) {
 
@@ -21,23 +23,57 @@ public class Principal {
 				int opc = sc.nextInt();
 
 				switch (opc) {
-				case 1:
-					veiculos.add(novoVeiculo(sc));
-					break;
-				case 2:
-					// inicia o cadastro do cliente
-					break;
 				case 0:
 					System.out.println("Até a próxima!");
 					sc.close();
 					System.exit(0);
+					break;
+				case 1: //cadastro de veículo
+					veiculos.add(novoVeiculo(sc));
+					System.out.println("\n *** VEÍCULO CADASTRADO! ***");
+					break;
+				case 2:
+					// inicia o cadastro do cliente
+					System.out.println("Que tipo de pessoas quer cadastrar: [1] Física | [2] Jurídica");
+					int tipoPessoa = sc.nextInt();
+					if (tipoPessoa == 1) {
+						pessoasFisicas.add(cadastraPessoaFisica(sc));
+					}
+					break;
+				case 5: //listagem de veículo
+					listarVeiculos(veiculos);
 					break;
 				default:
 					break;
 				}
 			}
 		}
-
+	}
+	
+	private static PessoaFisica cadastraPessoaFisica(Scanner sc) {
+		sc.nextLine();
+		PessoaFisica pf = new PessoaFisica();
+		
+		System.out.println("INFORME OS DADOS DA PESSOA:");
+		System.out.print("NOme: ");
+		pf.setNome(sc.nextLine());
+		
+		//..
+		
+		return pf;
+	}
+	
+	private static void listarVeiculos(ArrayList<Veiculo> listaVeiculos) {
+		if (listaVeiculos.size() == 0) {
+			System.err.println("\n***** SEM VEÍCULOS CADASTRADOS! *****");
+			return;
+		}
+		
+		System.out.println("\n***** LISTA DE VEÍCULOS *****");
+		for (Veiculo v : listaVeiculos) { //foreach
+			System.out.println(v.toString());
+			System.out.println("------------------");
+		}
 	}
 
 	private static Veiculo novoVeiculo(Scanner sc) {
@@ -76,7 +112,7 @@ public class Principal {
 
 		System.out.print("Valor da diária: R$ ");
 		v.setValorDiaria(sc.nextFloat());
-
+		//System.out.println(v.toString());
 		return v;
 	}
 

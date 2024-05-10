@@ -26,7 +26,6 @@ public class Veiculo {
 	}
 
 	public Veiculo() {
-
 	}
 
 	public String getFabricante() {
@@ -100,5 +99,22 @@ public class Veiculo {
 	public void setTipoCambio(TipoCambio tipoCambio) {
 		this.tipoCambio = tipoCambio;
 	}
-
+	
+	@Override
+	public String toString() {
+		
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(" - FABRICANTE: ").append(this.fabricante).append("\n");
+		sb.append(" - MODELO: ").append(this.modelo).append("\n");
+		sb.append(" - ANO DE FAB: ").append(this.anoFabricacao).append("\n");
+		sb.append(" - COR: ").append(this.cor).append("\n");
+		sb.append(" - KILOMETRAGEM: ").append(this.kilometragem).append("\n");
+		sb.append(" - PLACA: ").append(this.placa).append("\n");
+		sb.append(" - N PORTAS: ").append(this.numPortas).append("\n");
+		sb.append(" - DIÁRIA: R$ ").append(this.valorDiaria).append("\n");
+		sb.append(" - CÂMBIO: ").append(this.tipoCambio).append("\n");
+		
+		return sb.toString();
+	}
 }
